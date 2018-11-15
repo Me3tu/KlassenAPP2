@@ -42,8 +42,6 @@ int loginvalue ;
         Passwort = (EditText) findViewById(R.id.etPasswort);
         Login = (Button) findViewById(R.id.btnLogin);
 
-        SharedPreferences ed = getSharedPreferences("Ed", MODE_PRIVATE);
-        int mIntValue = ed.getInt("eduard", 0);
 
 
         SharedPreferences sp = getSharedPreferences("Lo", MODE_PRIVATE);
