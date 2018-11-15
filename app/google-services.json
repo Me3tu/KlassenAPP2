@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "598539259414",
+    "firebase_url": "https://klassenappd.firebaseio.com",
+    "project_id": "klassenappd",
+    "storage_bucket": "klassenappd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598539259414:android:c4a04582f5551421",
+        "android_client_info": {
+          "package_name": "com.meetu.klassenapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598539259414-qadoih34jblf9u12q39gcpvjd6nea1fh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.meetu.klassenapp",
+            "certificate_hash": "09f082a964ccacdd927a42ba749e6aa5191e9de4"
+          }
+        },
+        {
+          "client_id": "598539259414-iglsn3e8r552j767gqasp4acgu5f2aoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPOh6KUgbGXFO8Dq6Q7yS_iwVYqZVqUkA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598539259414-iglsn3e8r552j767gqasp4acgu5f2aoi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "598539259414-lt8cdmpgv2u21d0shorsps28rbh0rn4d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.adrianbaumgart.KlassenAppDREA123"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
