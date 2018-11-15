@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatDelegate;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,7 +24,7 @@ private EditText Name;
 private  EditText Passwort;
 private Button Login;
 
-int loginvalue ;
+
 
 
 
@@ -55,8 +56,7 @@ if (myIntValue == 1){
 
 
         // SharedPreferences.Editor sp = getSharedPreferences("Lo", Activity.MODE_PRIVATE);
-
-
+       
 
 Login.setOnClickListener(new View.OnClickListener() {
     @Override
