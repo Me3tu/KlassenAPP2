@@ -56,7 +56,7 @@ if (myIntValue == 1){
 
 
         // SharedPreferences.Editor sp = getSharedPreferences("Lo", Activity.MODE_PRIVATE);
-       
+
 
 Login.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -126,20 +126,13 @@ Login.setOnClickListener(new View.OnClickListener() {
         DatabaseReference r25 = FirebaseDatabase.getInstance().getReference().child("rules").child("editor").child("25");
         DatabaseReference r26 = FirebaseDatabase.getInstance().getReference().child("rules").child("editor").child("26");
 
-        if ((username.equals("1")) && (userpasswort.equals("1"))) {
-
-
-            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
-            startActivity(intent);
-
-
-        }
 
 
         if ((username.equals("meetu")) && (userpasswort.equals("meetu2005"))) {
-            if (r5.equals("y")) {
-                Intent intent = new Intent(MainActivity.this, MenuE.class);
+
+                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                 startActivity(intent);
+            loginstore();
 
 
 
@@ -354,14 +347,13 @@ Login.setOnClickListener(new View.OnClickListener() {
 
 
                 }
-            }}
+            }
             private void logUser () {
                 // TODO: Use the current user's information
                 // You can call any combination of these three methods
                 Crashlytics.setUserIdentifier("12345");
                 Crashlytics.setUserEmail("user@fabric.io");
                 Crashlytics.setUserName("Test User");
-            }
+            }}
 
 
-    }

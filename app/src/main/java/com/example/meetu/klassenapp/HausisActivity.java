@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 
 public class HausisActivity extends AppCompatActivity {
@@ -29,10 +28,10 @@ public class HausisActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hausis);
 
-        Woche1 = (TextView) findViewById(R.id.textView2);
-        Woche2 = (TextView) findViewById(R.id.textView3);
-        Woche3 = (TextView) findViewById(R.id.textView4);
-        Woche4 = (TextView) findViewById(R.id.textView);
+        Woche1 = (TextView) findViewById(R.id.woche1);
+        Woche2 = (TextView) findViewById(R.id.woche2);
+        Woche3 = (TextView) findViewById(R.id.woche3);
+        Woche4 = (TextView) findViewById(R.id.woche4);
         Habm = (Button) findViewById(R.id.HABM);
         dlm = (DrawerLayout) findViewById(R.id.dls);
         abdtm = new ActionBarDrawerToggle(this, dlm,R.string.Openm, R.string.Closem );
@@ -73,6 +72,7 @@ public class HausisActivity extends AppCompatActivity {
 
 
                 }
+
                 return true;
             }
         });

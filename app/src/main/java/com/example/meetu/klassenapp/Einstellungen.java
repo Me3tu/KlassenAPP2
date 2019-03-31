@@ -84,6 +84,7 @@ public class Einstellungen extends AppCompatActivity {
 
 
                 }
+
                 return true;
             }
         });

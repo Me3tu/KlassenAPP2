@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -24,19 +25,19 @@ public class ArbeitenActivity extends AppCompatActivity {
     TextView A3;
     TextView A4;
     TextView A5;
-    private DrawerLayout dla;
-    private ActionBarDrawerToggle abdta;
+    private DrawerLayout dlm;
+    private ActionBarDrawerToggle abdtm;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arbeiten);
-        dla = (DrawerLayout) findViewById(R.id.dls);
-        abdta = new ActionBarDrawerToggle(this, dla,R.string.Openm, R.string.Closem );
-        abdta.setDrawerIndicatorEnabled(true);
-        dla.addDrawerListener(abdta);
-        abdta.syncState();
+        dlm = (DrawerLayout) findViewById(R.id.dls);
+        abdtm = new ActionBarDrawerToggle(this, dlm,R.string.Openm, R.string.Closem );
+        abdtm.setDrawerIndicatorEnabled(true);
+        dlm.addDrawerListener(abdtm);
+        abdtm.syncState();
 
 
 
@@ -71,20 +72,22 @@ public class ArbeitenActivity extends AppCompatActivity {
 
 
                 }
+
                 return true;
             }
         });
 
-        A1 = (TextView) findViewById(R.id.tvArbeit1);
-        A2 = (TextView) findViewById(R.id.tvArbeit2);
-        A3 = (TextView) findViewById(R.id.tvArbeit3);
-        A4 = (TextView) findViewById(R.id.tvArbeit4);
-        A5 = (TextView) findViewById(R.id.tvArbeit5);
+        A1 = (Button) findViewById(R.id.tvArbeit1);
+        A2 = (Button) findViewById(R.id.tvArbeit2);
+        A3 = (Button) findViewById(R.id.tvArbeit3);
+        A4 = (Button) findViewById(R.id.tvArbeit4);
+        A5 = (Button) findViewById(R.id.tvArbeit5);
         DatabaseReference a1 = FirebaseDatabase.getInstance().getReference().child("arbeiten").child("Arbeit1").child("buttonname");
         DatabaseReference a2 = FirebaseDatabase.getInstance().getReference().child("arbeiten").child("Arbeit2").child("buttonname");
         DatabaseReference a3 = FirebaseDatabase.getInstance().getReference().child("arbeiten").child("Arbeit3").child("buttonname");
         DatabaseReference a4 = FirebaseDatabase.getInstance().getReference().child("arbeiten").child("Arbeit4").child("buttonname");
         DatabaseReference a5 = FirebaseDatabase.getInstance().getReference().child("arbeiten").child("Arbeit5").child("buttonname");
+
 
 
         A1.setOnClickListener(new View.OnClickListener() {
@@ -198,7 +201,7 @@ public class ArbeitenActivity extends AppCompatActivity {
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        return abdta.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
+        return abdtm.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
 
     }
 }

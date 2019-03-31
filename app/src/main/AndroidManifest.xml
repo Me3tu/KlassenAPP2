@@ -10,7 +10,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/darktheme">
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme">
@@ -25,7 +25,8 @@
                 android:value="75647a5b751857d7bbca61b71d97f10967188f31" />
         </activity>
         <activity android:name=".HomeActivity" />
-        <activity android:name=".MenuActivity" />
+        <activity android:name=".MenuActivity"
+            android:theme="@style/darktheme" />
         <activity android:name=".ArbeitenActivity" />
         <activity android:name=".HausisActivity" />
         <activity android:name=".Woche1Activity" />
@@ -55,7 +56,6 @@
         <activity android:name=".Einstellungen" />
         <activity android:name=".Speiseplan" />
         <activity android:name=".HabM" />
-        <activity android:name=".image" />
         <activity android:name=".Checklist" />
 
         <meta-data
